@@ -11,3 +11,21 @@ for(let i = 0; i != 10; i++) {
 dropdown.addEventListener('input', (e) => {
     max = dropdown.value;
 });
+
+const score1 = document.querySelector('.p1');
+const score2 = document.querySelector('.p2');
+const score = document.querySelector('.scorecard');
+
+score1.addEventListener('click', (e) => {
+    if(p1 < max && p2 < max) {
+        p1++;
+        score.innerText = `${p1} to ${p2}`;
+    }
+})
+
+score2.addEventListener('click', (e) => {
+    if(p2 < max && p1 < max) {
+        p2++;
+        score.innerText = `${p1} to ${p2}`;
+    }
+})
