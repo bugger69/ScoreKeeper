@@ -14,33 +14,28 @@ dropdown.addEventListener('input', (e) => {
 
 const score1 = document.querySelector('.p1');
 const score2 = document.querySelector('.p2');
+
 const score = document.querySelector('.scorecard');
+
+const span1 = document.querySelector('#player1');
+const span2 = document.querySelector('#player2');
+
+function updateScore() {
+     span1.innerText = `${p1}`;
+     span2.innerText = `${p2}`;
+}
 
 score1.addEventListener('click', () => {
     if(p1 < max && p2 < max) {
         p1++;
-        let span1 = document.createElement('span');
-        span1.innerHTML = `<b>${p1}</b>`;
-        let span2 = document.createElement('span');
-        span2.innerHTML = `<b>${p2}</b>`;
-        score.innerText = "";
-        score.append(span1);
-        score.append(' to ');
-        score.append(span2);
+        updateScore();
     }
 })
 
 score2.addEventListener('click', () => {
     if(p2 < max && p1 < max) {
         p2++;
-        let span1 = document.createElement('span');
-        span1.innerHTML = `<b>${p1}</b>`;
-        let span2 = document.createElement('span');
-        span2.innerHTML = `<b>${p2}</b>`;
-        score.innerText = "";
-        score.append(span1);
-        score.append(' to ');
-        score.append(span2);
+        updateScore();
     }
 })
 
