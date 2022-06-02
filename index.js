@@ -44,5 +44,5 @@ const reset = document.querySelector('.reset');
 reset.addEventListener('click', () => {
     p1 = 0;
     p2 = 0;
-    score.innerText = `${p1} to ${p2}`;
+    updateScore();
 })
