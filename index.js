@@ -8,7 +8,7 @@ for(let i = 0; i != 10; i++) {
     dropdown.append(option);
 }
 
-dropdown.addEventListener('input', (e) => {
+dropdown.addEventListener('input', () => {
     max = dropdown.value;
 });
 
