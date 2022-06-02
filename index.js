@@ -16,16 +16,24 @@ const score1 = document.querySelector('.p1');
 const score2 = document.querySelector('.p2');
 const score = document.querySelector('.scorecard');
 
-score1.addEventListener('click', (e) => {
+score1.addEventListener('click', () => {
     if(p1 < max && p2 < max) {
         p1++;
         score.innerText = `${p1} to ${p2}`;
     }
 })
 
-score2.addEventListener('click', (e) => {
+score2.addEventListener('click', () => {
     if(p2 < max && p1 < max) {
         p2++;
         score.innerText = `${p1} to ${p2}`;
     }
+})
+
+const reset = document.querySelector('.reset');
+
+reset.addEventListener('click', () => {
+    p1 = 0;
+    p2 = 0;
+    score.innerText = `${p1} to ${p2}`;
 })
