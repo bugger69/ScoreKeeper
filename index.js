@@ -19,14 +19,28 @@ const score = document.querySelector('.scorecard');
 score1.addEventListener('click', () => {
     if(p1 < max && p2 < max) {
         p1++;
-        score.innerText = `${p1} to ${p2}`;
+        let span1 = document.createElement('span');
+        span1.innerHTML = `<b>${p1}</b>`;
+        let span2 = document.createElement('span');
+        span2.innerHTML = `<b>${p2}</b>`;
+        score.innerText = "";
+        score.append(span1);
+        score.append(' to ');
+        score.append(span2);
     }
 })
 
 score2.addEventListener('click', () => {
     if(p2 < max && p1 < max) {
         p2++;
-        score.innerText = `${p1} to ${p2}`;
+        let span1 = document.createElement('span');
+        span1.innerHTML = `<b>${p1}</b>`;
+        let span2 = document.createElement('span');
+        span2.innerHTML = `<b>${p2}</b>`;
+        score.innerText = "";
+        score.append(span1);
+        score.append(' to ');
+        score.append(span2);
     }
 })
 
