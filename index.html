@@ -13,35 +13,37 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <div class="column is-half is-offset-one-quarter">
-      <div class="card">
-        <div class="card-header">
-          <!-- <div class="image">
-            <img src="" alt="Random Picture" />
-          </div> -->
-          <h1 class = "card-header-title">ScoreKeeper Widget</h3>
-        </div>
-        <div class = "card-content">
-          <div class="score">
-            <h1 class="scorecard content title is-1">
-              <span id="player1">0</span> to <span id="player2">0</span>
-            </h1>
-            <p class = "subtitle">Use the buttons below to keep score.</p>
+    <section class="section">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+          <div class="image is-2by1">
+              <img src="images/RandomImage" alt="Random Picture" />
           </div>
-          <div class="playingto">
-            <span id="playingto" class = "label is-large is-inline"><b>Playing to</b></span>
-            <div class="select is-rounded">
-              <select name="" id="dropDown" class=""></select>
+          <div class="card-header">
+            <h1 class = "card-header-title">ScoreKeeper Widget</h3>
+          </div>
+          <div class = "card-content">
+            <div class="score">
+              <h1 class="scorecard content title is-1">
+                <span id="player1">0</span> to <span id="player2">0</span>
+              </h1>
+              <p class = "subtitle">Use the buttons below to keep score.</p>
+            </div>
+            <div class="playingto">
+              <span id="playingto" class = "label is-large is-inline"><b>Playing to</b></span>
+              <div class="select is-rounded">
+                <select name="" id="dropDown" class=""></select>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="buttons card-footer">
-          <button class="p1 card-footer-item button is-small">+1 Player One</button>
-          <button class="p2 card-footer-item button is-small">+1 Player Two</button>
-          <button class="reset card-footer-item button is-small">Reset</button>
+          <div class="buttons card-footer">
+            <button class="p1 card-footer-item button is-small is-danger">+1 Player One</button>
+            <button class="p2 card-footer-item button is-small is-link">+1 Player Two</button>
+            <button class="reset card-footer-item button is-small is-warning">Reset</button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <script src="index.js"></script>
   </body>

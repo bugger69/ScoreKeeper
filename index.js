@@ -3,7 +3,7 @@ let p2 = 0;
 let max = 1;
 
 let dropdown = document.querySelector("#dropDown");
-for (let i = 0; i != 10; i++) {
+for (let i = 0; i != 20; i++) {
   let option = document.createElement("option");
   option.innerText = `${i + 1}`;
   dropdown.append(option);
@@ -28,16 +28,26 @@ function updateScore() {
   if (p1 == max) {
     span1.classList.add("green");
     span2.classList.add("red");
+    score1.disabled = true;
+    score2.disabled = true;
+    return;
   } else {
     span1.classList.remove("green");
     span2.classList.remove("red");
+    score1.disabled = false;
+    score2.disabled = false;
   }
   if (p2 == max) {
     span1.classList.add("red");
     span2.classList.add("green");
+    score1.disabled = true;
+    score2.disabled = true;
+    return;
   } else {
     span1.classList.remove("red");
     span2.classList.remove("green");
+    score1.disabled = false;
+    score2.disabled = false;
   }
 }
 
