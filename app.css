@@ -3,9 +3,9 @@ body {
     text-align: center;
 }
 
-.playingto {
+/* .playingto {
     padding-bottom: 1%;
-}
+} */
 
 .green {
     color : green;
@@ -15,7 +15,6 @@ body {
     color : red;
 }
 
-.buttons {
+.card-header-title {
     text-align: center;
-    display : inline-block;
 }
